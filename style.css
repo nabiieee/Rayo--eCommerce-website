@@ -7,7 +7,13 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
+
+button:hover, ul{
+  cursor: pointer;
+}
+
 .hero-section {
   display: flex;
   justify-content: space-evenly;
@@ -17,8 +23,17 @@ main {
   border-radius: 25px;
 }
 
-.display-none {
+.display-hidden {
   visibility: hidden;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.margin-title {
+  margin: 25px;
+  width: 95% !important;
 }
 
 .text-align-center {
@@ -35,6 +50,10 @@ main {
   margin-bottom: 10px;
 }
 
+.font-style {
+  font-family: "Averia Serif Libre", serif;
+}
+
 .card-color-blue {
   background-color: #abcad9;
 }
@@ -48,8 +67,8 @@ main {
   background-color: #cf4538;
 }
 
-.txt-color {
-  color: #f8efde;
+.txt-color h3 {
+  color: #f8efde !important;
 }
 
 .section-1 {
@@ -104,6 +123,10 @@ a {
   width: 50px;
   height: 50px;
   font-style: italic;
+}
+
+.logo: hover{
+  cursor: pointer;
 }
 
 .hero-section-1 {
@@ -172,6 +195,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.icons:hover{
+  cursor: pointer;
+}
+
 .icons-section {
   height: 100%;
   width: 25%;
@@ -261,6 +289,11 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.favorite-tag:hover{
+  cursor: pointer;  
+}
+
 .favorites-icon {
   height: 20px;
 }
@@ -407,7 +440,7 @@ a {
 
 .style-img-2-bg {
   width: 100%;
-  height: 75%;
+  height: 72%;
   background-color: #abcad9;
   border-radius: 26px;
   display: flex;
@@ -418,17 +451,17 @@ a {
 .category-card {
   display: flex;
   width: 98%;
-  height: 12rem;
+  max-height: 12rem;
   margin-bottom: 15px;
-   align-items: center;
-    justify-content: space-around;
-
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.category-card span {
+.category-card-txt span {
   font-family: "Outfit", sans-serif;
   color: #cf4538;
   font-size: 18px;
+  width: 85%;
 }
 
 .categories-section {
@@ -436,27 +469,289 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-      margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .category-img {
-  width: 25%;
-height: 86%;
+  width: 24%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 15px 0px 15px 0;
 }
 .category-img img {
   width: 37%;
 }
 .category-card-txt {
-  width: 70%;
+  width: 72%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .category-card-txt h3 {
-  margin:0 0 10px 0;
+  margin: 0 0 10px 0;
+  font-family: "Averia Serif Libre", serif;
+  font-style: italic;
+  font-size: 3rem;
+  color: #cf4538;
+}
+
+.create-section {
+  height: 35rem;
+  width: 98%;
+  margin-top: 8rem;
+}
+
+.create-top-section {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px;
+}
+.create-title {
+  width: 60%;
+  margin-left: 2rem;
+}
+
+.create-bttn {
+  width: 12%;
+}
+
+.create-title h2 {
+  margin-top: 0px;
+}
+
+.create-txt span {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+.create-txt {
+  margin: 0 0 2rem 2.5rem;
+  width: 50%;
+}
+
+.create-images {
+  width: 62%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.create-img-1 {
+  margin-left: 2rem;
+  width: 100%;
+  background-color: #f8efde;
+  height: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-img-1 img {
+  height: 14rem;
+}
+
+.create-img-2 {
+  height: 25rem;
+  position: absolute;
+  left: 50rem;
+  bottom: 0rem;
+}
+
+.create-img-2 img {
+  height: 100%;
+  border-radius: 25px;
+}
+
+.journal-section {
+  width: 95%;
+  height: 33rem;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.journal-img {
+  height: 88%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.journal-img img {
+  height: 90%;
+}
+
+.links {
+  width: 60%;
+  height: 56%;
   font-family: "Averia Serif Libre", serif;
   font-style: italic;
   font-size: 2.5rem;
   color: #cf4538;
+}
+
+.links li {
+  width: 85%;
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 14px;
+  padding: 0;
+}
+
+.links ul:hover {
+  text-decoration: underline;
+}
+
+footer {
+  width: 98%;
+  height: 18rem;
+  display: flex;
+  justify-content: space-around;
+  color: #f8efde;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px
+}
+
+.footer-top-section {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links-section {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: #f8efde;
+}
+
+.company-name {
+  display: flex;
+  height: 100%;
+  width: 23%;
+  font-size: 50px;
+  justify-content: center;
+}
+
+.company-name h1 {
+  font-style: italic;
+  height: 93%;
+  margin-top: 10px;
+}
+
+.footer-links h4 {
+  font-family: "Averia Serif Libre", serif;
+  margin: 10px 0 10px 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-links li {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.footer-links ul {
+  margin: 0;
+}
+
+.footer-links ul:hover{
+   text-decoration: underline;
+   cursor: pointer;
+
+}
+
+.email-section {
+  width: 25%;
+}
+
+.email-section h4 {
+  font-family: "Averia Serif Libre", serif;
+  font-style: italic;
+  margin: 0px 0 11px 0;
+}
+
+.email-section span,
+.email-input input::placeholder {
+  font-family: "Outfit", sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  color: #f8efde;
+}
+
+.email-input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Outfit", sans-serif;
+  color: #f8efde;
+  width: 90%;
+}
+
+.email-input input:focus {
+  border-bottom: 1px solid #f8efde;
+}
+
+.email-input button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  color: #f8efde;
+  width: 10%;
+}
+
+.email-input {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f8efde;
+  margin-top: 15px;
+}
+
+.email-input form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-bottom-section {
+  height: 30%;
+  width: 90%;
+}
+
+.copyright-section {
+  font-family: "Outfit", sans-serif;
+  font-weight: 10;
+  height: 70%;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
