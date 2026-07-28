@@ -10,8 +10,8 @@
 }
 
 body {
-  margin: 7px 0 0 0;
-  width: 100%;
+  /* margin: 7px 0 0 0; */
+  /* width: auto; */
   background-color: var(--color-cream);
 }
 main {
@@ -601,7 +601,7 @@ a {
 }
 
 .journal-img img {
-  height: 90%;
+  width: 90%;
 }
 
 .links {
@@ -1170,9 +1170,6 @@ hr {
     height: 12rem;
   }
 
-  .journal-img img {
-    height: 80%;
-  }
 
   .links {
     font-size: 1.4rem;
